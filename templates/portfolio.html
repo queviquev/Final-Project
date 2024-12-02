@@ -1,0 +1,197 @@
+{% extends "mytemplate.html" %} {% block title %} Quevin's Portfolio {% endblock
+%} {% block head %}
+<style>
+  html,
+  body,
+  .btn {
+    background-color: #002b6e;
+    color: #acccff;
+  }
+
+  .btn:hover,
+  .offcanvas .btn:hover {
+    color: #7dafff;
+  }
+
+  .btn.active,
+  p a:hover,
+  hr,
+  .vr {
+    color: #ffe200;
+  }
+
+  .nav-link,
+  p a,
+  #offcanvasmenu .vr {
+    color: #ff00a0;
+  }
+
+  #offcanvasmenu .btn,
+  #offcanvasmenu a.nav-link {
+    color: #002b6e;
+  }
+
+  #offcanvasmenu .btn:hover,
+  #offcanvasmenu a.nav-link:hover {
+    color: #ff00a0;
+  }
+
+  #offcanvasmenu,
+  .offcanvas .btn {
+    background-color: #acccff;
+    color: #002b6e;
+  }
+
+  hr,
+  vr {
+    opacity: 100;
+  }
+
+  .card-body {
+    background-color: #6f18ff;
+    color: #ffffff;
+  }
+  .card-body .btn {
+    color: white;
+    background-color: #1771ff;
+  }
+
+  .card-body .btn:hover {
+    color: #ffa4dd;
+  }
+</style>
+{% endblock %} 
+{% block content %}
+<div class="container w3-container w3-animate-bottom">
+  <div class="row">
+    <div class="container headcontainer">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h1 class="display-1">Project Portfolio</h1>
+          <p class="h5">
+            Here are a fiew of the projects I have worked on. I know there isn't
+            much to see, but there is definite improvement from project to project.
+            More projects to come in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container bodycontainer">
+    <div class="row ps-5 row-cols-1 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card h-100 border-dark">
+          <img
+            src="{{ url_for('static', filename='images/Spring2024Thumbnail.png') }}"
+            class="card-img-top"
+            alt="Thumbnail for Spring 2024 Final Project"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Final Project for ITSE-1311.001</h5>
+            <p class="card-text">
+              In the Spring of 2024, I took my first web design course. At first I
+              didn't consider web development as an option, as I originally was
+              majoring in database development. However, I ended up enjoying this
+              course more than I originally thought I would. This was my final
+              project for the course. I know it's not the best, but it is what got
+              me into web development in the first place.
+            </p>
+            <a href="https://donotenter.com/spring2024/lresendiz2/" class="btn"
+              >Go to ITSE-1311 Final Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-dark">
+          <img
+            src="{{ url_for('static', filename='images/UdemyPortfolioThumbnail.png') }}"
+            class="card-img-top"
+            alt="Thumbnail of portfolio"
+          />
+          <div class="card-body">
+            <h5 class="card-title">My First "Portfolio"</h5>
+            <p class="card-text">
+              During the first half of my summer break, I decided to take an
+              online course on Udemy to keep practicing web development. While
+              this is a rather simple "portfolio" with simple projects, I feel
+              like this course has helped and continued to help me with using HTML
+              and CSS. It was also my first introduction to Bootstrap.
+            </p>
+            <a href="https://queviquev.github.io/html-portfolio/" class="btn"
+              >Go to My First "Portfolio"</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-dark">
+          <img
+            src="{{ url_for('static', filename='images/MeowShelterThumbnail.png') }}"
+            class="card-img-top"
+            alt="Thumbnail of Meow Meow Shelter"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Meow Meow Shelter</h5>
+            <p class="card-text">
+              This was a lab assignment assigned in IMED-1341. The assignment was
+              to create a sample page for a group or organization. I made mine for
+              a fictional shelter for cats. Personally this was one of my favorite
+              assignments from the course. I just like how it turned out, and it
+              allowed for me to look up some internet cats.
+            </p>
+            <a
+              href="https://queviquev.github.io/Lab-2--CSS-Grid-Layout/"
+              class="btn"
+              >Go to Meow Meow Shelter Assignment</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-dark">
+          <img
+            src="{{ url_for('static', filename='images/SevenFallsThumbnail.png') }}"
+            class="card-img-top"
+            alt="Thumbnail for Seven Falls Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Seven Falls</h5>
+            <p class="card-text">
+              This was another lab assignment for IMED-1341. The assignment was to
+              create a website that promotes a vacation location that uses anchor
+              links for navigation. I was really proud with how it turned out,
+              especially the navigation bar that helps navigate faster through the
+              page as it is relatively long. I also love the images that were
+              provided by a good friend of mine.
+            </p>
+            <a href="https://queviquev.github.io/vacation_lab/" class="btn"
+              >Go to Seven Falls Assignment</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-dark">
+          <img
+            src="{{ url_for('static', filename='images/FinalProject.png') }}"
+            class="card-img-top"
+            alt="Thumbnail for Final Project Website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">IMED 1341 Final Project</h5>
+            <p class="card-text">
+              Wait, does this look familiar? Well this website itself is another project of mine. It is my final project for IMED 1341. For the time being, this will be my personal site where I will display the work and projects I've done until hopefully someday I get the opportunity to create something bigger and better. As I'm writing this, though, I can say I am proud of myself for how far along I've come, and this project was proof of it. 
+            </p>
+            <a href="https://queviquev.github.io/vacation_lab/" class="btn"
+              >Go to IMED 1341 Final Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "mytemplate.html" %}
+{% block title %}
+Privacy Policy
+{% endblock %}
+{% block head %}
+    <style>
+        html, body, .btn {
+            background-color: #820052;
+            color: #ACCCFF; 
+        }
+
+        .btn:hover, .offcanvas .btn:hover {
+            color: #FF70CA;
+        }
+
+        .btn.active, p a:hover, hr, .vr{
+            color: #FFE200;
+        }
+
+        .nav-link, p a, #offcanvasmenu .vr {
+            color: #FF00A0;
+        }
+
+        #offcanvasmenu .btn, #offcanvasmenu a.nav-link{
+            color: #820052;
+        }
+
+        #offcanvasmenu .btn:hover, #offcanvasmenu a.nav-link:hover{
+            color: #6F18FF;
+        }
+
+        #offcanvasmenu, .offcanvas .btn{
+            background-color: #ACCCFF;
+            color: #820052; 
+        }
+
+        hr, vr {
+            opacity: 100;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container ps-5">
+        <div class="row ps-5 w3-container w3-animate-bottom">
+            <h1>Privacy Policy</h1>
+            <p>This Privacy Policy outlines how Queviquev collects, uses, and protects your personal information. We are committed to safeguarding your privacy.</p>
+            <h2>Information We Collect</h2>
+            <p>We may collect the following types of information:</p>
+            <ul>
+                <li>Personal information you provide (e.g., name, email address)</li>
+                <li>Information collected automatically (e.g., IP address, browser type)</li>
+            </ul>
+            <h2>How We Use Your Information</h2>
+            <p>We may use your information to:</p>
+            <ul>
+                <li>Provide and improve our services</li>
+                <li>Communicate with you</li>
+                <li>Analyze website usage</li>
+            </ul>
+            <h2>Sharing Your Information</h2>
+            <p>We may share your information with:</p>
+            <ul>
+                <li>Service providers</li>
+                <li>Legal authorities (if required)</li>
+            </ul>
+            <h2>Data Security</h2>
+            <p>We implement security measures to protect your information from unauthorized access.</p>
+            <h2>Your Rights</h2>
+            <p>You may have certain rights regarding your personal information, such as:</p>
+            <ul>
+                <li>Access your data</li>
+                <li>Correct inaccuracies</li>
+                <li>Request deletion</li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, please contact us at lresendiz2@collin.edu.</p>
+            <p>This Privacy Policy may be updated from time to time. Please review it regularly.</p>
+        </div>
+    </div>
+{% endblock %}

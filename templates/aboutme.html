@@ -1,0 +1,156 @@
+{% extends "mytemplate.html" %}
+{% block title %}
+About Me
+{% endblock %}
+{% block head %}
+    <style>
+        html, body, .btn {
+            background-color: #820052;
+            color: #ACCCFF; 
+        }
+
+        .btn:hover, .offcanvas .btn:hover {
+            color: #FF70CA;
+        }
+
+        .btn.active, p a:hover, hr, .vr{
+            color: #FFE200;
+        }
+
+        .nav-link, p a, #offcanvasmenu .vr {
+            color: #FF00A0;
+        }
+
+        #offcanvasmenu .btn, #offcanvasmenu a.nav-link{
+            color: #820052;
+        }
+
+        #offcanvasmenu .btn:hover, #offcanvasmenu a.nav-link:hover{
+            color: #6F18FF;
+        }
+
+        #offcanvasmenu, .offcanvas .btn{
+            background-color: #ACCCFF;
+            color: #820052; 
+        }
+
+        hr, vr {
+            opacity: 100;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+<div class="container w3-container w3-animate-bottom ps-5">
+    <div class="container headcontainer" id="aboutheader">
+        <div class="row align-center">
+            <div class="col-md-8 col-sm-6 d-block my-auto text-center">
+                <h1 class="display-1">About Me</h1>
+                <p class="h5">So you want to know about me... weird.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                    <img class="img-fluid img-thumbnail w3-animate-right" src="{{ url_for('static', filename='images/me.png') }}" alt="Quevin">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container bodycontainer ps-5" id="aboutbody">
+        <div class="row">
+            <div class="col">
+                <h2 class="display-3">How did I become interested in web development?</h2>
+                <p class="">I returned to college to pursue a second degree in database development in the Spring of 2024. I already had a bachelor's in psychology with a minor in biology, but I had no prior experience in the field and was not able to find a job. After working in Amazon for a few of years, I attended Collin College and during my first semester took an introductory course to web development. After that, I got hooked and changed my major to web development and here I am now, making websites.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="display-3">Personal Life</h2>
+                <p class="">My name is Larry Kevin Resendiz, but I prefer to go by Kevin. I am a cat dad of two, Neko and Ozzy. I received Neko on Christmas of 2024. Ever since, he's been my best friend. He's your typical stereotype of an orange cat with an attitude. He loves to climb high places, play fetch, and sit inside boxes and bags. Ozzy on the other hand, is my little prince of darkness. I received him from a coworker who found him covered in fleas and hungry in at a Home Depot parking lot. I took him in, and he turned out to be the sweetest cat ever. He absolutely LOVES food. He loves food so much, that I have had to replace two trash cans due to him being able to get inside of them.</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='cats/ozzyandneko.jpg') }}" alt="Ozzy and Neko sleeping">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='images/elden-ring.webp') }}" alt="Elden Ring">
+            </div>            
+            <div class="col-lg-8">
+                <h2 class="display-3">Hobbies</h2>
+                <p class="">If you couldn't tell by my logo, I enjoy Rubik's cube puzzles. When I was in high school, I could solve a cube in less than 20 seconds. After high school, however, I haven't been able to get back into speedcubing. It would probably take me around a minute now to solve one. I also enjoy playing video games. Typically I play challenging platformers and metroidvanias, but my favorite game is Elden Ring. I've put so many hours into that game despite not being the typical genre I play. It is such a masterpiece.</p>
+            </div>
+
+        </div>
+        <hr>
+        
+        <div class="container">
+            <div>
+                <h2 class="display-3">For visiting my page, have some pictures of my cats</h2>
+            </div>
+            <div id="catCarousel" class="carousel slide" style="min-height: 50vh">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                  <button type="button" data-bs-target="#catCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                </div>
+                <div class="carousel-inner justify-content-center">
+                  <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='cats/awkward.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/aww.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/bag.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/belly.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/box.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/cute.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/iseeyou.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/ozzpose.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/ozzyandneko.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/rant.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/snug.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='cats/stretch.jpg')}}" class="d-block object-fit-contain mx-auto" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#catCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#catCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                   
+                </div>
+        </div>
+</div>
+{% endblock %}
