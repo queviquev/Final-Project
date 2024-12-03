@@ -36,5 +36,4 @@ def hireme():
 def privacypolicy():
     return render_template("privacypolicy.html", social=social)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run(debug=True)
