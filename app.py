@@ -40,4 +40,5 @@ def privacypolicy():
     social = get_social()
     return render_template("privacypolicy.html", social=social)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
