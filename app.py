@@ -17,7 +17,7 @@ def home():
     social = get_social()
     return render_template("index.html", social=social)
 
-@app.route("/portfolio/")
+@app.route("/portfolio")
 def portfolio():
     social = get_social()
     return render_template('portfolio.html', social=social)
