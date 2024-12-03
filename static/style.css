@@ -25,3 +25,7 @@
     background-color: #ffffff00;
     border-width: 0;
 }
+
+html, body, .btn {
+    color: #ACCCFF; 
+}
