@@ -14,6 +14,8 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = catfolder
 
 @app.route("/")
+
+@app.route("/")
 def home():
     return render_template("index.html", social)
 
