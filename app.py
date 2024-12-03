@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from socials import get_social
+from templates.socials import get_social
 
 app = Flask(__name__)
 
